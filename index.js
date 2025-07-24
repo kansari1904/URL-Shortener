@@ -10,10 +10,7 @@ const userRouter = require('./routes/user')
 const app = express();
 const PORT = 8000;
 
-//db
-// connectDB('mongodb+srv://user_12:khalid12@codegyan.7jtlw.mongodb.net/?retryWrites=true&w=majority&appName=CodeGyan').then(()=>{
-//     console.log("Database connected.. ")
-// })
+//db connection
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
